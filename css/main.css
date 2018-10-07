@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../img/background.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: rgb(46, 107, 82);
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+}
+
+a {
+  color: rgb(46, 107, 82);
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+
+section {
+  padding: 20px;
+}
+
+.header-section {
+  width: 100%;
+  border: 3px solid rgb(46, 107, 82);;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.body-section {
+  margin: 10px;
+}
+.icons a {
+  padding: 0.4rem;
+}
+
+a:hover {
+  color: rgb(2, 255, 44);
+  transition: color 0.5s ease-out;
+}
+
+main {
+  padding: 4rem;
+  height: 100%;  
+}
+
+.bio-image{
+  max-width: 220px;
+}
+
+.welcome {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-info {
+  display: grid;
+  grid-template-areas:"bio-image welcome";
+  grid-template-areas:"bio-image info";
+  grid-template-areas:"bio-image icons";
+}
+
+.skill-name::after {
+  content: " -";
+}
+
+.skill-value::after {
+  content: "\A";
+  white-space: pre;
+}
