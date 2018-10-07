@@ -34,7 +34,7 @@ section {
 
 .header-section {
   width: 100%;
-  border: 3px solid rgb(46, 107, 82);;
+  border: 3px solid rgb(46, 107, 82);
   padding: 10px;
   font-size: 1.5rem;
 }
@@ -56,8 +56,9 @@ main {
   height: 100%;  
 }
 
-.bio-image{
+.bio-image {
   max-width: 220px;
+  border: 3px solid rgb(46, 107, 82);
 }
 
 .welcome {
@@ -79,4 +80,26 @@ main {
 .skill-value::after {
   content: "\A";
   white-space: pre;
+}
+
+.projects {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr); 
+}
+
+.projects img {
+  width: 100%;
+  border: 3px solid rgb(46, 107, 82);
+}
+
+.projects img:hover {
+  opacity: 0.5;
+  transition: color 0.5s ease-out;
+}
+
+.btn {
+  display:block;
+  margin: 0 auto;
+  text-align: center;
 }
